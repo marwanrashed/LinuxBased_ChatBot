@@ -21,7 +21,6 @@ private:
 public:
     // constructor / desctructor
     GraphEdge(int id);
-
     // getter / setter
     int GetID() { return _id; }
     void SetChildNode(GraphNode *childNode);

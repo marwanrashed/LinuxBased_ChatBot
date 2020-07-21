@@ -1,0 +1,3 @@
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/build/CMakeFiles/rebuild_cache.dir
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/build/CMakeFiles/edit_cache.dir
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/build/CMakeFiles/membot.dir

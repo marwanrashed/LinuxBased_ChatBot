@@ -15,6 +15,8 @@ ChatBot::ChatBot()
     _image = nullptr;
     _chatLogic = nullptr;
     _rootNode = nullptr;
+    _currentNode = nullptr;
+
 }
 
 // constructor WITH memory allocation
@@ -25,6 +27,7 @@ ChatBot::ChatBot(std::string filename)
     // invalidate data handles
     _chatLogic = nullptr;
     _rootNode = nullptr;
+    _currentNode = nullptr;
 
     // load image into heap memory
     _image =  new  wxBitmap(filename, wxBITMAP_TYPE_PNG);
@@ -48,6 +51,7 @@ ChatBot::~ChatBot()
         std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
         _chatLogic = source._chatLogic;
         _rootNode = source._rootNode;
+        _currentNode = source._currentNode;
         _image =  new wxBitmap(*source._image);
 
 
@@ -59,7 +63,8 @@ ChatBot::~ChatBot()
         delete _image;
         _image = new wxBitmap(*source._image);
         _chatLogic = source._chatLogic;
-        _rootNode = source._rootNode;       
+        _rootNode = source._rootNode;
+        _currentNode = source._currentNode;       
          return *this;
     } // (3) overloading copy assignement operator
     ChatBot::ChatBot(ChatBot &&source) {
@@ -67,24 +72,27 @@ ChatBot::~ChatBot()
         _image = source._image;
         _chatLogic = source._chatLogic;
         _rootNode = source._rootNode;
+        _currentNode = source._currentNode;
         source._image = nullptr;
         source._chatLogic = nullptr;
         source._rootNode = nullptr;
+        source._currentNode = nullptr;
     } // (4) Move constructor
     ChatBot &ChatBot::operator=(ChatBot &&source) {
         std::cout << "MOVING (assign) instance " << &source << " to instance " << this << std::endl;
         if (this == &source)
             return *this;
-
-        delete _image;
-
+        
         _image = source._image;
         _chatLogic = source._chatLogic;
         _rootNode =source._rootNode;
-
+        _currentNode = source._currentNode;
+        _chatLogic->SetChatbotHandle(this);
         source._image = nullptr;
         source._chatLogic = nullptr;
         source._rootNode = nullptr;
+        source._currentNode = nullptr;
+
 
         return *this;
     } // (5) overloading move assignement operator

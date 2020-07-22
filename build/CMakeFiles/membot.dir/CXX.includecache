@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatbot.cpp
-iostream
--
-random
--
-algorithm
--
-ctime
--
-chatlogic.h
-/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatlogic.h
-graphnode.h
-/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/graphnode.h
-graphedge.h
-/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/graphedge.h
-chatbot.h
-/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatbot.h
-
 /home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatbot.h
 wx/bitmap.h
 -
@@ -35,6 +17,30 @@ memory
 -
 wx/wx.h
 -
+
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatlogic.cpp
+fstream
+-
+sstream
+-
+iostream
+-
+vector
+-
+iterator
+-
+tuple
+-
+algorithm
+-
+graphedge.h
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/graphedge.h
+graphnode.h
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/graphnode.h
+chatbot.h
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatbot.h
+chatlogic.h
+/home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatlogic.h
 
 /home/maro/C++ Nanodegree/Memory Management/Marwan_RA_CHATBOT/src/chatlogic.h
 vector
